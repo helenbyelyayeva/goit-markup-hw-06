@@ -54,6 +54,31 @@
             <div class="modal">
               <button data-modal-close class="m-exit"><svg class="m-icons">
                   <use href="./images/icons.svg#icon-cross"></use></svg></button>
+              <form class="modal-form">
+                <h3>Залиште свої дані, ми вам передзвонимо</h3>
+                <label class="m-label" for="user_name">Ім'я
+                  <input class="m-input" type="text" name="name" id="user_name">
+                  <svg class="mf-icons">
+                    <use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
+                </label>
+                <label class="m-label" for="user_telephone">Телефон
+                  <input class="m-input" type="tel" name="telephone"
+                    id="user_telephone" >
+                  <svg class="mf-icons">
+                    <use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
+                </label>
+                <label class="m-label" for="user_email">Пошта
+                  <input class="m-input" type="email" name="email"
+                    id="user_email" >
+                  <svg class="mf-icons">
+                    <use href="./images/icons.svg#icon-Vector"></use></svg>
+                </label>
+                <label class="m-label" for="comment">Коментар
+                  <textarea class="m-comment" name="comment" id="comment" rows="8"
+                    placeholder="Введіть текст"></textarea>
+                </label>
+                <button type="submit">Відправити</button>
+              </form>
             </div>
           </div>
         </section>
@@ -349,21 +374,7 @@
                   </svg></a></li>
             </ul>
           </div>
-          <div class="send_email">
-            <h3>Підпишіться на розсилку</h3>
-            <div class="f-line">
-              <form name="signup_form" autocomplete="on" novalidate>
-                <label>
-                  Email
-                  <input type="email" name="email" />
-                </label>
-              </form>
-              <button class="f-email"><p>Підписатися</p><svg
-                  class="f-email-i">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg></button>
-            </div>
-          </div>
+
         </div>
       </footer>
       <script src="./js/modal.js"></script>
